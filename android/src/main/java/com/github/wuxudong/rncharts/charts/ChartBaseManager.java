@@ -46,8 +46,8 @@ public abstract class ChartBaseManager<T extends Chart, U extends Entry> extends
 
     protected static final int SET_DATA_AND_LOCK_INDEX = 9;
     protected static final int ADD_ENTRIES = 10;
-    protected static final int ADD_ENTRIES = 11;
-    protected static final int REPLACE_DATA_SETS = 12;
+    protected static final int REPLACE_DATA_SETS = 11;
+    protected static final int REMOVE_ENTRIES = 12;
 
     abstract DataExtract getDataExtract();
 

@@ -290,9 +290,9 @@ public abstract class BarLineChartBaseManager<T extends BarLineChartBase, U exte
                 "fitScreen", FIT_SCREEN,
                 "highlights", HIGHLIGHTS,
                 "setDataAndLockIndex", SET_DATA_AND_LOCK_INDEX,
-                "addEntries", ADD_ENTRIES,
-                "removeEntries", REMOVE_ENTRIES);
+                "addEntries", ADD_ENTRIES);
         map.put("replaceDataSets", REPLACE_DATA_SETS);
+        map.put("removeEntries", REMOVE_ENTRIES);
 
         if (commandsMap != null) {
             map.putAll(commandsMap);
