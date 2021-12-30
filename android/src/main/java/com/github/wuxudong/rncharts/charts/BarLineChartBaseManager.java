@@ -339,7 +339,7 @@ public abstract class BarLineChartBaseManager<T extends BarLineChartBase, U exte
                 addEntries(root, args.getArray(0));
                 return;
 
-            case ADD_ENTRIES:
+            case REMOVE_ENTRIES:
                 removeEntries(root, args.getArray(0));
                 return;
 
