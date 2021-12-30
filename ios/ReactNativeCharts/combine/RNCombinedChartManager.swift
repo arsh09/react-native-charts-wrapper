@@ -54,6 +54,10 @@ open class RNCombinedChartManager: RCTViewManager, RNBarLineChartBaseManager {
     (self as RNBarLineChartBaseManager)._addEntries(reactTag, data: data)
   }
 
+  func removeEntries(_ reactTag: NSNumber, data: NSArray) {
+    (self as RNBarLineChartBaseManager)._removeEntries(reactTag, data: data)
+  }
+
   func replaceDataSets(_ reactTag: NSNumber, data: NSArray) {
     (self as RNBarLineChartBaseManager)._replaceDataSets(reactTag, data: data)
   }
