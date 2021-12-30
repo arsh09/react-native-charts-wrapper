@@ -371,7 +371,7 @@ public abstract class BarLineChartBaseManager<T extends BarLineChartBase, U exte
     }
 
     private void removeEntries(T root, ReadableArray arr) {
-        for (int i = 0; i < arr.size(); i++) {
+        for (int i = 0; i < map.getArray("values").size(); i++) {
             ReadableMap map = arr.getMap(i);
             IDataSet dataSetByIndex = root.getData().getDataSetByIndex(map.getInt("index"));
 
@@ -381,7 +381,8 @@ public abstract class BarLineChartBaseManager<T extends BarLineChartBase, U exte
 
             ArrayList<Entry> entries = getDataExtract().createEntries(map.getArray("values"));
             for (Entry entry : entries) {
-                dataSetByIndex.addEntry(entry);
+                // dataSetByIndex.addEntry(entry);
+                dataSetByIndex.removeFirst();
             }
         }
         root.getData().notifyDataChanged();
